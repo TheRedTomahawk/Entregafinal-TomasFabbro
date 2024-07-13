@@ -68,14 +68,14 @@ header {
   display: grid;
   justify-content: center;
   align-items: center;
-  border: 30px solid red;
+  border: 13px solid red;
   border-radius: 50px;
-  gap: 30px;
+  gap: 15px;
 }
 .container_galery .img1 {
   border-radius: 60px;
 }
 .container_galery .img1:hover {
   transform: scale(1.05);
-} 
+}
 
