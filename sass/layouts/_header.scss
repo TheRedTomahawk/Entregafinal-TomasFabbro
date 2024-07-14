@@ -1,0 +1,27 @@
+header {
+    @keyframes circle-in-hesitate {
+        0% {
+        -webkit-clip-path: circle(0%);
+        clip-path: circle(0%);
+        background-color: aqua;
+        }
+        40% {
+        -webkit-clip-path: circle(40%);
+        clip-path: circle(40%);
+        background-color: brown;
+        }
+        100% {
+        -webkit-clip-path: circle(125%);
+        clip-path: circle(125%);
+        background-color: darkorchid;
+        }
+    }
+    
+    [transition-style="in:circle:hesitate"] {
+        animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-hesitate both infinite;
+    }
+    
+    header {
+        animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-hesitate both infinite;
+    }
+}
