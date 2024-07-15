@@ -1,27 +1,16 @@
-@import url(./sass/views/_gallery.scss);
-@import url(./sass/views/_index.scss);
-@import url(./sass/views/_melees.scss);
-@import url(./sass/views/_repeaters.scss);
-@import url(./sass/views/_rifles.scss);
-@import url(./sass/views/_shotguns.scss);
-@import url(./sass/views/_sidearms.scss);
-@import url(./sass/views/_string-weapons.scss);
-body {
-  background-color: black;
-  color: #dc1717;
-}
-
-.footer_p {
-  font-size: 20px;
-  text-align: center;
-}
-
-.img1 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
+.container_galery {
+  display: grid;
   justify-content: center;
+  align-items: center;
+  border: 30px solid red;
+  border-radius: 50px;
+  gap: 30px;
+}
+.container_galery .img1 {
+  border-radius: 60px;
+}
+.container_galery .img1:hover {
+  transform: scale(1.05);
 }
 
 main {
@@ -39,14 +28,30 @@ main ul li {
   align-items: center;
 }
 
-p {
-  font-size: 30px;
-}
-
 a {
   text-decoration: none;
 }
 
+.img1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  background-color: red;
+}
+
+body {
+  background-color: black;
+  color: #dc1717;
+}
+
+header {
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-hesitate both infinite;
+}
 @keyframes circle-in-hesitate {
   0% {
     -webkit-clip-path: circle(0%);
@@ -64,25 +69,23 @@ a {
     background-color: darkorchid;
   }
 }
-[transition-style="in:circle:hesitate"] {
+header [transition-style="in:circle:hesitate"] {
   animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-hesitate both infinite;
 }
 
-header {
-  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-hesitate both infinite;
+.footer_p {
+  font-size: 20px;
+  text-align: center;
+  background: black;
+  color: #dc1717;
 }
 
-.container_galery {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  border: 30px solid red;
-  border-radius: 50px;
-  gap: 30px;
+* {
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
 }
-.container_galery .img1 {
-  border-radius: 60px;
-}
-.container_galery .img1:hover {
-  transform: scale(1.05);
+
+p {
+  font-size: 30px;
 }/*# sourceMappingURL=main.css.map */
