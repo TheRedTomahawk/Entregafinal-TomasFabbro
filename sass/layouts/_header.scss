@@ -1,27 +1,25 @@
 header {
-    @keyframes circle-in-hesitate {
-        0% {
-        -webkit-clip-path: circle(0%);
-        clip-path: circle(0%);
-        background-color: aqua;
-        }
-        40% {
-        -webkit-clip-path: circle(40%);
-        clip-path: circle(40%);
-        background-color: brown;
-        }
-        100% {
-        -webkit-clip-path: circle(125%);
-        clip-path: circle(125%);
-        background-color: darkorchid;
-        }
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-hesitate both infinite;
+  @keyframes circle-in-hesitate {
+    0% {
+      -webkit-clip-path: circle(0%);
+      clip-path: circle(0%);
+      background-color: aqua;
     }
-    
-    [transition-style="in:circle:hesitate"] {
-        animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-hesitate both infinite;
+    40% {
+      -webkit-clip-path: circle(40%);
+      clip-path: circle(40%);
+      background-color: brown;
     }
-    
-    header {
-        animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-hesitate both infinite;
+    100% {
+      -webkit-clip-path: circle(125%);
+      clip-path: circle(125%);
+      background-color: darkorchid;
     }
+  }
+
+  [transition-style="in:circle:hesitate"] {
+    animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-hesitate both
+      infinite;
+  }
 }
