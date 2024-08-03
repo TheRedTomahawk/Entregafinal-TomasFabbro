@@ -41,7 +41,8 @@ a {
 }
 
 .form-control {
-  background-color: red;
+  background-color: #8e8e8e;
+  color : red;
 }
 
 body {
@@ -88,4 +89,8 @@ header [transition-style="in:circle:hesitate"] {
 
 p {
   font-size: 30px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.form-text {
+  color: red;
+}
